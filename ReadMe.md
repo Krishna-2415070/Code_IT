@@ -32,24 +32,55 @@ An AI-powered helmet violation detection and traffic monitoring system built usi
 * `yolov8n.pt` – Base YOLO model
 * `README.md` – Project documentation
 
-## Running the Project
 
-1. Clone the repository
+## Running the Project from Source Code
 
+### 1. Clone the Repository
 
+```bash
 git clone https://github.com/Krishna-2415070/Code_IT.git
+cd Code_IT
+```
 
+### 2. Create a Virtual Environment
 
-2. Install dependencies
+```bash
+python -m venv .venv
+```
 
+### 3. Activate the Virtual Environment
 
+Windows PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+Windows Command Prompt:
+
+```cmd
+.venv\Scripts\activate.bat
+```
+
+### 4. Install Required Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+### 5. Run the Application
 
-3. Run the application
-
-
+```bash
 python APP.py
+```
+
+### Notes
+
+* Ensure `best.pt` and `yolov8n.pt` are present in the project directory.
+* The application automatically detects available hardware.
+* NVIDIA GPU users will benefit from CUDA acceleration.
+* Systems without NVIDIA GPUs will automatically run in CPU mode.
+
 
 
 ## Hardware Support
