@@ -156,8 +156,39 @@ Sample media files are included in the `Test-Files` folder and can be used to ev
 * Report Generation
 
 
+
+## Web Version (Method - 3)
+
+A browser-based version of the Traffic Intelligence System is also available for quick access and demonstration purposes.
+
+### Web Application Link
+
+https://huggingface.co/spaces/Krishna-2415070/traffic-intelligence-system
+
+### Features Available in the Web Version
+
+* Image-Based Helmet Violation Detection
+* Basic Video-Based Analysis
+* Browser-Based Access Without Installation
+* Easy Demo Access From Any Device
+* AI-Powered Detection Through a Web Interface
+
+### Notes
+
+* The web version is designed for accessibility and demonstration.
+* Some advanced desktop features may not be fully available in the web version.
+* For the complete feature set, best performance, and most reliable experience, the Standalone Executable Version (Method - 2) is highly recommended.
+
+
 ## Developed By
 
-Code_IT
+## Team - Code_IT 
+-->Krishna Mahato (lead)
+-->Akash De
+-->Himanshi Agarwal
+-->Tinkal Das
+
 
 National Institute of Technology Silchar (NIT Silchar)
+Electronics and Instrumentation, EIE-28
+
