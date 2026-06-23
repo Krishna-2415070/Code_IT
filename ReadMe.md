@@ -1,194 +1,243 @@
+<div align="center">
 
+<h1>🚦 Traffic Intelligence System</h1>
 
-# Traffic Intelligence System 🚦
+<p><strong>AI-Powered Helmet Violation Detection & Traffic Monitoring</strong></p>
 
-An AI-powered helmet violation detection and traffic monitoring system built using YOLO, OpenCV, PyTorch, and Tkinter.
+<p>
+  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/YOLO-Ultralytics-FF6F00?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenCV-4.x-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-Latest-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+</p>
 
-## Features
+<p>
+  <img src="https://img.shields.io/badge/GPU-CUDA Supported-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+  <img src="https://img.shields.io/badge/CPU-Auto Fallback-0078D4?style=for-the-badge&logo=intel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
+</p>
 
-* Helmet Violation Detection
-* Image-Based Analysis
-* Video-Based Analysis
-* Real-Time Webcam Monitoring
-* Automatic Violation Evidence Capture
-* Analytics Dashboard
-* PDF Report Generation
-* HTML Report Generation
-* CPU and GPU Support
+<br/>
 
-## Technologies Used
+> A real-time traffic surveillance system that detects helmet violations using custom-trained YOLO models, with automatic evidence capture, analytics dashboards, and multi-format report generation.
 
-* Python
-* YOLO (Ultralytics)
-* OpenCV
-* PyTorch
-* Tkinter
-* FPDF
+<br/>
 
-## Project Files
+</div>
 
-* `APP.py` – Main application source code (inside folder named, "MODELS")
-* `best.pt` – Custom trained helmet detection model (Inside folder named, "MODELS")
-* `yolov8n.pt` – Base YOLO model
-* `README.md` – Project documentation
+---
 
+## 📋 Table of Contents
 
-## Running the Project from Source Code (METHOD - 1)
+- [✨ Features](#-features)
+- [🛠️ Technologies](#️-technologies)
+- [📁 Project Structure](#-project-structure)
+- [🚀 Getting Started](#-getting-started)
+  - [Method 1 — Run from Source](#method-1--run-from-source)
+  - [Method 2 — Standalone Executable](#method-2--standalone-executable)
+  - [Method 3 — Web Version](#method-3--web-version)
+- [⚙️ Hardware Support](#️-hardware-support)
+- [👥 Team](#-team)
 
-### 1. Clone the Repository
+---
 
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 🪖 **Helmet Violation Detection** | AI-powered real-time detection of riders without helmets |
+| 🖼️ **Image Analysis** | Upload and analyze static images for violations |
+| 🎥 **Video Analysis** | Process pre-recorded traffic footage frame by frame |
+| 📡 **Live Webcam Monitoring** | Real-time detection through any connected camera |
+| 📸 **Evidence Capture** | Automatically saves snapshots of detected violations |
+| 📊 **Analytics Dashboard** | Visual summary of detections, statistics, and trends |
+| 📄 **PDF Report Generation** | Export detailed violation reports in PDF format |
+| 🌐 **HTML Report Generation** | Web-friendly reports for browser-based viewing |
+| ⚡ **GPU Acceleration** | CUDA support for high-speed inference on NVIDIA GPUs |
+
+---
+
+## 🛠️ Technologies
+
+<table>
+<tr>
+  <td><strong>Language</strong></td>
+  <td>Python 3.8+</td>
+</tr>
+<tr>
+  <td><strong>Object Detection</strong></td>
+  <td>YOLO v8 (Ultralytics)</td>
+</tr>
+<tr>
+  <td><strong>Computer Vision</strong></td>
+  <td>OpenCV</td>
+</tr>
+<tr>
+  <td><strong>Deep Learning</strong></td>
+  <td>PyTorch</td>
+</tr>
+<tr>
+  <td><strong>GUI Framework</strong></td>
+  <td>Tkinter</td>
+</tr>
+<tr>
+  <td><strong>PDF Generation</strong></td>
+  <td>FPDF</td>
+</tr>
+</table>
+
+---
+
+## 📁 Project Structure
+
+```
+Code_IT/
+│
+├── MODELS/
+│   ├── APP.py               # Main application source code
+│   └── best.pt              # Custom trained helmet detection model
+│
+├── yolov8n.pt               # Base YOLOv8 nano model
+├── requirements.txt         # Python dependencies
+└── README.md                # Project documentation
+```
+
+> ⚠️ **Important:** Both `best.pt` and `yolov8n.pt` must be present for the application to run correctly.
+
+---
+
+## 🚀 Getting Started
+
+Choose the method that best fits your setup:
+
+---
+
+### Method 1 — Run from Source
+
+> Best for developers who want full control and customization.
+
+**Step 1 — Clone the Repository**
 ```bash
 git clone https://github.com/Krishna-2415070/Code_IT.git
 cd Code_IT
 ```
 
-### 2. Create a Virtual Environment
-
+**Step 2 — Create a Virtual Environment**
 ```bash
 python -m venv .venv
 ```
 
-### 3. Activate the Virtual Environment
+**Step 3 — Activate the Environment**
 
-Windows PowerShell:
+| Platform | Command |
+|---|---|
+| Windows PowerShell | `.\.venv\Scripts\Activate.ps1` |
+| Windows CMD | `.venv\Scripts\activate.bat` |
+| Linux / macOS | `source .venv/bin/activate` |
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-Windows Command Prompt:
-
-```cmd
-.venv\Scripts\activate.bat
-```
-
-### 4. Install Required Dependencies
-
+**Step 4 — Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Run the Application
-
+**Step 5 — Run the Application**
 ```bash
 python APP.py
 ```
 
-### Notes
+---
 
-* Ensure `best.pt` and `yolov8n.pt` are present in the project directory.
-* The application automatically detects available hardware.
-* NVIDIA GPU users will benefit from CUDA acceleration.
-* Systems without NVIDIA GPUs will automatically run in CPU mode.
+### Method 2 — Standalone Executable
 
+> Best for non-technical users. No Python or setup required.
 
+**📥 Download**
 
-## Hardware Support
+[![Download ZIP](https://img.shields.io/badge/Download-Windows%20Executable-0078D6?style=for-the-badge&logo=windows)](https://drive.google.com/file/d/1yLVL0KgYn60xEaEIDXLlegMlzgledl50/view?usp=sharing)
 
-The application automatically detects available hardware.
+**Installation Steps**
 
-* NVIDIA GPU → CUDA accelerated inference
-* CPU → Automatic fallback mode
-
-For the best detection speed and highest FPS during real-time video and webcam processing, it is recommended to run the application on a system equipped with an NVIDIA GPU.
-
-
-## Standalone Executable Version (Method - 2)
-
-For users who do not want to set up Python, virtual environments, or dependencies, a pre-built Windows executable version of the application is available.
-
-### Download
-
-Traffic Intelligence System (Windows Executable)
-
-https://drive.google.com/file/d/1yLVL0KgYn60xEaEIDXLlegMlzgledl50/view?usp=sharing
-
-### Installation Steps
-
-1. Download the ZIP file from the link above.
-
-2. Extract the ZIP file to any desired location.
-
-3. After extraction, the folder structure should appear as:
+1. Download the ZIP file from the link above
+2. Extract it to any folder on your system
+3. Verify the extracted folder structure:
 
 ```
 Traffic-APP/
 │
 ├── README.pdf
-├── Test-Files/
+├── Test-Files/          ← Sample media for testing
 │
 └── TrafficIntelligence/
     ├── TrafficIntelligence.exe
-    └── _internal/
+    └── _internal/       ← Do NOT modify this folder
 ```
 
-4. Open:
+4. Navigate to `Traffic-APP → TrafficIntelligence`
+5. Double-click `TrafficIntelligence.exe` to launch
+
+> 🧪 **Test Files:** Sample images and videos are included in the `Test-Files/` folder for trying out detection, video processing, and report generation.
+
+> 🔒 **Note:** Do not delete, move, or rename any files inside the `_internal/` folder — the app will fail to start.
+
+---
+
+### Method 3 — Web Version
+
+> Best for quick demos and browser-based access. No installation needed.
+
+[![Open Web App](https://img.shields.io/badge/Open-Web%20Application-FFD21E?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/Krishna-2415070/traffic-intelligence-system)
+
+**Available in the Web Version:**
+- ✅ Image-based helmet violation detection
+- ✅ Basic video analysis
+- ✅ AI-powered detection via browser interface
+- ✅ Works on any device without installation
+
+> ⚡ For the **complete feature set**, best FPS, and most reliable performance — use **Method 2 (Standalone Executable)**.
+
+---
+
+## ⚙️ Hardware Support
+
+The application **automatically detects your hardware** at startup — no manual configuration needed.
 
 ```
-Traffic-APP → TrafficIntelligence
+┌─────────────────────────────────────────────────────┐
+│                                                     │
+│   NVIDIA GPU detected?                              │
+│        YES  →  CUDA-accelerated inference ⚡        │
+│        NO   →  Automatic CPU fallback mode 🖥️       │
+│                                                     │
+└─────────────────────────────────────────────────────┘
 ```
 
-5. Double-click:
+> 💡 **Recommendation:** For best real-time performance (high FPS in live webcam and video modes), use a system with an **NVIDIA GPU**.
 
-```
-TrafficIntelligence.exe
-```
+---
 
-6. The application will start automatically.
+## 👥 Team
 
-### Important Notes
+<div align="center">
 
-* Do not delete, move, or modify any files inside the `_internal` folder.
-* No Python installation is required.
-* No dependency installation is required.
-* No virtual environment setup is required.
-* The application automatically detects available hardware.
-* Systems with NVIDIA GPUs will utilize CUDA acceleration for improved performance.
-* Systems without NVIDIA GPUs will automatically run in CPU mode.
+**Team Code_IT**
+*National Institute of Technology Silchar (NIT Silchar)*
+*Department of Electronics and Instrumentation Engineering — EIE-28*
 
-### Testing
+<br/>
 
-Sample media files are included in the `Test-Files` folder and can be used to evaluate:
+| Role | Name |
+|---|---|
+| 👑 Team Lead | Krishna Mahato |
+| 👨‍💻 Member | Akash De |
+| 👩‍💻 Member | Himanshi Agarwal |
+| 👨‍💻 Member | Tinkal Das |
 
-* Image Detection
-* Video Processing
-* Helmet Violation Detection
-* Report Generation
+</div>
 
+---
 
+<div align="center">
 
-## Web Version (Method - 3)
+**Built with ❤️ at NIT Silchar**
 
-A browser-based version of the Traffic Intelligence System is also available for quick access and demonstration purposes.
-
-### Web Application Link
-
-https://huggingface.co/spaces/Krishna-2415070/traffic-intelligence-system
-
-### Features Available in the Web Version
-
-* Image-Based Helmet Violation Detection
-* Basic Video-Based Analysis
-* Browser-Based Access Without Installation
-* Easy Demo Access From Any Device
-* AI-Powered Detection Through a Web Interface
-
-### Notes
-
-* The web version is designed for accessibility and demonstration.
-* Some advanced desktop features may not be fully available in the web version.
-* For the complete feature set, best performance, and most reliable experience, the Standalone Executable Version (Method - 2) is highly recommended.
-
-
-## Developed By
-
-## Team - Code_IT 
--->Krishna Mahato (lead)
--->Akash De
--->Himanshi Agarwal
--->Tinkal Das
-
-
-National Institute of Technology Silchar (NIT Silchar)
-Electronics and Instrumentation, EIE-28
-
+</div>
