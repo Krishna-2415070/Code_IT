@@ -33,7 +33,7 @@ An AI-powered helmet violation detection and traffic monitoring system built usi
 * `README.md` – Project documentation
 
 
-## Running the Project from Source Code
+## Running the Project from Source Code (METHOD - 1)
 
 ### 1. Clone the Repository
 
@@ -91,6 +91,70 @@ The application automatically detects available hardware.
 * CPU → Automatic fallback mode
 
 For the best detection speed and highest FPS during real-time video and webcam processing, it is recommended to run the application on a system equipped with an NVIDIA GPU.
+
+
+## Standalone Executable Version (Method - 2)
+
+For users who do not want to set up Python, virtual environments, or dependencies, a pre-built Windows executable version of the application is available.
+
+### Download
+
+Traffic Intelligence System (Windows Executable)
+
+https://drive.google.com/file/d/1yLVL0KgYn60xEaEIDXLlegMlzgledl50/view?usp=sharing
+
+### Installation Steps
+
+1. Download the ZIP file from the link above.
+
+2. Extract the ZIP file to any desired location.
+
+3. After extraction, the folder structure should appear as:
+
+```
+Traffic-APP/
+│
+├── README.pdf
+├── Test-Files/
+│
+└── TrafficIntelligence/
+    ├── TrafficIntelligence.exe
+    └── _internal/
+```
+
+4. Open:
+
+```
+Traffic-APP → TrafficIntelligence
+```
+
+5. Double-click:
+
+```
+TrafficIntelligence.exe
+```
+
+6. The application will start automatically.
+
+### Important Notes
+
+* Do not delete, move, or modify any files inside the `_internal` folder.
+* No Python installation is required.
+* No dependency installation is required.
+* No virtual environment setup is required.
+* The application automatically detects available hardware.
+* Systems with NVIDIA GPUs will utilize CUDA acceleration for improved performance.
+* Systems without NVIDIA GPUs will automatically run in CPU mode.
+
+### Testing
+
+Sample media files are included in the `Test-Files` folder and can be used to evaluate:
+
+* Image Detection
+* Video Processing
+* Helmet Violation Detection
+* Report Generation
+
 
 ## Developed By
 
